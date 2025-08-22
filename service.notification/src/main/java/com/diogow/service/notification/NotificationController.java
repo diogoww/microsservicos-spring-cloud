@@ -12,6 +12,7 @@ public class NotificationController {
 
     @PostMapping
     public ResponseEntity<Void> sendNotification(@RequestBody NotificationRequest request){
+        System.out.println(request.message());
         return ResponseEntity.ok().build();
     }
 }
