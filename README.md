@@ -107,7 +107,7 @@ microsservicos-spring-cloud/
 
 ```bash
 # Clone o repositório
-git clone <url-do-repositorio>
+git clone https://github.com/diogoww/microsservicos-spring-cloud.git
 cd microsservicos-spring-cloud
 
 # Execute com Docker Compose
