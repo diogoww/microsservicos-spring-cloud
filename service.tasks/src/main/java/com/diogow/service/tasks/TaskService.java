@@ -1,8 +1,11 @@
 package com.diogow.service.tasks;
 
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Service
 public class TaskService {
     private final TasksRepository tasksRepository;
     private final NotificationClient notificationClient;
