@@ -8,10 +8,10 @@ RUN mvn clean install -DSkipTests
 
 FROM amazoncorretto:21
 
-COPY --from=build /app/target/service-tasks-0.0.1-SNAPSHOT.jar /app/app.jar
+COPY --from=build /app/target/service.tasks-0.0.1-SNAPSHOT.jar /app/app.jar
 
 WORKDIR /app
 
-EXPOSE 8888
+EXPOSE 8081
 
 CMD ["java", "-jar", "app.jar"]
