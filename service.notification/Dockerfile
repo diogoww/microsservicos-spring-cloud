@@ -12,6 +12,6 @@ COPY --from=build /app/target/service.notification-0.0.1-SNAPSHOT.jar /app/app.j
 
 WORKDIR /app
 
-EXPOSE 8888
+EXPOSE 8082
 
 CMD ["java", "-jar", "app.jar"]
